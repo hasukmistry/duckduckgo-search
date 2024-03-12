@@ -1,0 +1,25 @@
+{
+  "name": "duckduckgo-search",
+  "version": "1.0.0",
+  "description": "Search for given query string with site param on html.duckduckgo.com/html/ and parse first result to Json",
+  "main": "index.js",
+  "type": "module",
+  "author": "Hasmukh Mistry <hasmukhmistry137@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.24.0",
+    "@babel/node": "^7.23.9",
+    "@babel/preset-env": "^7.24.0",
+    "cheerio": "^1.0.0-rc.12",
+    "express": "^4.18.3",
+    "superagent": "^8.1.2"
+  },
+  "devDependencies": {
+    "babel-plugin-module-resolver": "^5.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "nodemon": "^3.1.0"
+  }
+}
