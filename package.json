@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec babel-node index.js",
+    "start": "NODE_ENV=development nodemon --exec babel-node index.js",
     "dev": "npm start",
-    "build": "babel ./ -d dist --ignore node_modules",
+    "build": "NODE_ENV=production babel ./ -d dist --ignore node_modules",
     "production": "node dist/index.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
