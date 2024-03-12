@@ -4,6 +4,15 @@
   "description": "Search for given query string with site param on html.duckduckgo.com/html/ and parse first result to Json",
   "main": "index.js",
   "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node index.js",
+    "dev": "npm start",
+    "build": "babel ./ -d dist --ignore node_modules",
+    "production": "node dist/index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
   "author": "Hasmukh Mistry <hasmukhmistry137@gmail.com>",
   "license": "ISC",
   "dependencies": {
